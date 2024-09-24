@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Roll Animation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .rotate-on-hover {
+            transition: transform 0.5s;
+        }
+
+        /* First image rolls forward */
+        .image1:hover {
+            transform: translateX(100px) rotate(30deg);
+        }
+
+        /* Second image rolls backward */
+        .image2:hover {
+            transform: translateX(-100px) rotate(-30deg);
+        }
+
+        /* Third image rolls downward */
+        .image3:hover {
+            transform: translateY(100px) rotate(30deg);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-white">
+    <h1 class="text-xl font-bold mb-4">
+        Hover over the images to see the rolling animations
+    </h1>
+    <div class="w-full max-w-4xl">
+        <div class="grid grid-cols-2 gap-4 border border-gray-300">
+            <div class="flex items-center justify-center border border-gray-300 h-48">
+                <span>Image 1</span>
+            </div>
+            <div class="flex items-center justify-center border border-gray-300 h-48">
+                <img alt="Placeholder image 150x150" class="rotate-on-hover image1" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-JhsZqpdQ74iB2nrrWofcudHA.png?st=2024-09-24T08%3A46%3A43Z&se=2024-09-24T10%3A46%3A43Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-09-23T23%3A40%3A38Z&ske=2024-09-24T23%3A40%3A38Z&sks=b&skv=2024-08-04&sig=1Ghzj6k9L7vuytdH5a9gmUpbfM2FRUigi81iya31ZLU%3D" width="150"/>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 border border-gray-300 mt-4">
+            <div class="flex items-center justify-center border border-gray-300 h-48">
+                <span>Image 2</span>
+            </div>
+            <div class="flex items-center justify-center border border-gray-300 h-48">
+                <img alt="Placeholder image 150x150" class="rotate-on-hover image2" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-JhsZqpdQ74iB2nrrWofcudHA.png?st=2024-09-24T08%3A46%3A43Z&se=2024-09-24T10%3A46%3A43Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-09-23T23%3A40%3A38Z&ske=2024-09-24T23%3A40%3A38Z&sks=b&skv=2024-08-04&sig=1Ghzj6k9L7vuytdH5a9gmUpbfM2FRUigi81iya31ZLU%3D" width="150"/>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 border border-gray-300 mt-4">
+            <div class="flex items-center justify-center border border-gray-300 h-48">
+                <span>Image 3</span>
+            </div>
+            <div class="flex items-center justify-center border border-gray-300 h-48">
+                <img alt="Placeholder image 150x150" class="rotate-on-hover image3" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-JhsZqpdQ74iB2nrrWofcudHA.png?st=2024-09-24T08%3A46%3A43Z&se=2024-09-24T10%3A46%3A43Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-09-23T23%3A40%3A38Z&ske=2024-09-24T23%3A40%3A38Z&sks=b&skv=2024-08-04&sig=1Ghzj6k9L7vuytdH5a9gmUpbfM2FRUigi81iya31ZLU%3D" width="150"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
